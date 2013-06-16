@@ -1,0 +1,249 @@
+<div class="form">
+
+<?php echo CHtml::beginForm(); ?>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo CHtml::errorSummary($model); ?>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'operator_location'); ?>
+		<?php echo CHtml::activeTextField($model,'operator_location',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo CHtml::error($model,'operator_location'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'rr_account_id'); ?>
+		<?php echo CHtml::activeTextField($model,'rr_account_id'); ?>
+		<?php echo CHtml::error($model,'rr_account_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'rr_emailsent'); ?>
+		<?php echo CHtml::activeTextField($model,'rr_emailsent'); ?>
+		<?php echo CHtml::error($model,'rr_emailsent'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'rr_synchronized'); ?>
+		<?php echo CHtml::activeTextField($model,'rr_synchronized'); ?>
+		<?php echo CHtml::error($model,'rr_synchronized'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'rr_createdate'); ?>
+		<?php echo CHtml::activeTextField($model,'rr_createdate'); ?>
+		<?php echo CHtml::error($model,'rr_createdate'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'rr_lastaccess'); ?>
+		<?php echo CHtml::activeTextField($model,'rr_lastaccess'); ?>
+		<?php echo CHtml::error($model,'rr_lastaccess'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'name'); ?>
+		<?php echo CHtml::activeTextField($model,'name',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'password'); ?>
+		<?php echo CHtml::activePasswordField($model,'password',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'password'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'password1'); ?>
+		<?php echo CHtml::activeTextField($model,'password1',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'password1'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'password_orig'); ?>
+		<?php echo CHtml::activeTextField($model,'password_orig',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo CHtml::error($model,'password_orig'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'astrologers'); ?>
+		<?php echo CHtml::activeTextField($model,'astrologers',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo CHtml::error($model,'astrologers'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'tarotreaders'); ?>
+		<?php echo CHtml::activeTextField($model,'tarotreaders',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo CHtml::error($model,'tarotreaders'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'clairvoyants'); ?>
+		<?php echo CHtml::activeTextField($model,'clairvoyants',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo CHtml::error($model,'clairvoyants'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'area'); ?>
+		<?php echo CHtml::activeTextField($model,'area',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo CHtml::error($model,'area'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'comments'); ?>
+		<?php echo CHtml::activeTextArea($model,'comments',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo CHtml::error($model,'comments'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'login'); ?>
+		<?php echo CHtml::activeTextField($model,'login',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'login'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'emailaddress'); ?>
+		<?php echo CHtml::activeTextField($model,'emailaddress',array('size'=>60,'maxlength'=>70)); ?>
+		<?php echo CHtml::error($model,'emailaddress'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'hear'); ?>
+		<?php echo CHtml::activeTextField($model,'hear',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'hear'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'day'); ?>
+		<?php echo CHtml::activeTextField($model,'day',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo CHtml::error($model,'day'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'month'); ?>
+		<?php echo CHtml::activeTextField($model,'month',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo CHtml::error($model,'month'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'year'); ?>
+		<?php echo CHtml::activeTextField($model,'year',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo CHtml::error($model,'year'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'address'); ?>
+		<?php echo CHtml::activeTextField($model,'address',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo CHtml::error($model,'address'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'phone'); ?>
+		<?php echo CHtml::activeTextField($model,'phone',array('size'=>60,'maxlength'=>60)); ?>
+		<?php echo CHtml::error($model,'phone'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'seniority'); ?>
+		<?php echo CHtml::activeTextField($model,'seniority',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo CHtml::error($model,'seniority'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'type'); ?>
+		<?php echo CHtml::activeTextField($model,'type',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'frames'); ?>
+		<?php echo CHtml::activeTextField($model,'frames',array('size'=>18,'maxlength'=>18)); ?>
+		<?php echo CHtml::error($model,'frames'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'status'); ?>
+		<?php echo CHtml::activeTextField($model,'status',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo CHtml::error($model,'status'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'laststatusupdate'); ?>
+		<?php echo CHtml::activeTextField($model,'laststatusupdate'); ?>
+		<?php echo CHtml::error($model,'laststatusupdate'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'balance'); ?>
+		<?php echo CHtml::activeTextField($model,'balance',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo CHtml::error($model,'balance'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'requestid'); ?>
+		<?php echo CHtml::activeTextField($model,'requestid'); ?>
+		<?php echo CHtml::error($model,'requestid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'banlist'); ?>
+		<?php echo CHtml::activeTextField($model,'banlist',array('size'=>1,'maxlength'=>1)); ?>
+		<?php echo CHtml::error($model,'banlist'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'gender'); ?>
+		<?php echo CHtml::activeTextField($model,'gender',array('size'=>19,'maxlength'=>19)); ?>
+		<?php echo CHtml::error($model,'gender'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'affiliate'); ?>
+		<?php echo CHtml::activeTextField($model,'affiliate',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo CHtml::error($model,'affiliate'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'first_reading'); ?>
+		<?php echo CHtml::activeTextField($model,'first_reading',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo CHtml::error($model,'first_reading'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'user_type'); ?>
+		<?php echo CHtml::activeTextField($model,'user_type',array('size'=>3,'maxlength'=>3)); ?>
+		<?php echo CHtml::error($model,'user_type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'free_mins'); ?>
+		<?php echo CHtml::activeTextField($model,'free_mins'); ?>
+		<?php echo CHtml::error($model,'free_mins'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'reader_real_name'); ?>
+		<?php echo CHtml::activeTextField($model,'reader_real_name',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo CHtml::error($model,'reader_real_name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'lang'); ?>
+		<?php echo CHtml::activeTextField($model,'lang',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo CHtml::error($model,'lang'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo CHtml::activeLabelEx($model,'chat_type'); ?>
+		<?php echo CHtml::activeTextField($model,'chat_type'); ?>
+		<?php echo CHtml::error($model,'chat_type'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	</div>
+
+<?php echo CHtml::endForm(); ?>
+
+</div><!-- form -->

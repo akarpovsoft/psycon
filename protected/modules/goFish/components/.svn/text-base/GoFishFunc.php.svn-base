@@ -1,0 +1,114 @@
+<?php
+
+class GoFishFunc
+{
+    /**
+     * GoFishFunc::Adres()
+     * 
+     * @return adress of a module
+     */
+    static function Adres()
+    {
+        return 'goFish';
+    }
+
+    static function writeSelect($name)
+    {
+        $fishes = array('fish1', 'fish2', 'fish3', 'fish4', 'fish5', 'fish6', 'fish7',
+            'fish8');
+            
+        $data = '<select name="' . $name . '">';
+        $data .= '<option value="0">No model';
+        $CurrentFish = GoFishFishes::model()->findByAttributes(array('reader' => $name));
+        foreach ($fishes as $fish)
+        {
+            if ($CurrentFish->model == $fish)
+            {
+                $data .= '<option value="' . $fish . '" selected>' . $fish;
+            } else
+            {
+                $data .= '<option value="' . $fish . '">' . $fish;
+            }
+        }
+        $data .= '</select>';
+        return $data;
+    }
+
+    static function getFishModel($name)
+    {
+        return GoFishFishes::model()->findByAttributes(array('reader' => $name))->model;
+    }
+
+    /**
+     * GoFishFunc::userType()
+     * 
+     * @return type user 
+     */
+    static function userType()
+    {
+        if (!Yii::app()->user->isGuest)
+        {
+            return Yii::app()->user->type;
+        } else
+        {
+            return 0;
+        }
+    }
+
+    /**
+     * GoFishFunc::userId()
+     * 
+     * @return user id 
+     */
+    static function userId()
+    {
+        if (!Yii::app()->user->isGuest)
+        {
+            if (Yii::app()->user->type == 'reader' || Yii::app()->user->type ==
+                'Administrator')
+            {
+                return Yii::app()->user->id;
+            }
+        } else
+        {
+            return 0;
+        }
+    }
+
+    /**
+     * GoFishFunc::userLogin()
+     * 
+     * @param mixed $id
+     * @return CLIENT! login
+     */
+    static function userLogin($id)
+    {
+        return GoFishUsers::model()->findByPk($id)->username;
+    }
+
+    /**
+     * GoFishFunc::readerLogin()
+     * 
+     * @param mixed $id
+     * @return reader login
+     */
+    static function readerLogin($id)
+    {
+        return users::model()->findByPk($id)->name;
+    }
+
+    static function canModify()
+    {
+        if ($_GET['id'])
+        {
+            if ((self::userId() == GoFishAnswers::model()->findByPk($_GET['id'])->author_id) &&
+                self::userType() == 'reader')
+            {
+                return true;
+            } else
+                return false;
+        } else
+            return false;
+    }
+
+}

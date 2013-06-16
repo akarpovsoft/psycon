@@ -1,0 +1,243 @@
+<style type="text/css"> 
+html, body {height: 100%;}
+.table100 {
+    height: 100%;
+	color: #919191;
+	font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+	}
+body {
+	margin-top: 0;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right: 0;
+	margin-width:0;
+	margin-height:0;
+	background-color: #250101;
+	background-image: url(http://localhost/psychic_contact_com_new/new/public_html/advanced/images/psynet/bg_1.gif);
+	background-repeat: repeat-x;
+	background-position: 0% 0%;
+	}
+textarea {
+	border:1px solid #0291DB;
+	background-color: #EDF1F1;	
+	}
+input {
+	border:1px solid #0291DB;
+	background-color: #EDF1F1;	
+	}
+h1 {
+	color: #f4d992;
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 0;
+}
+h2 {
+	color: #f4d992;
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 0;
+}
+h3 {
+	color: #53492e;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.white11 {
+	color: #585532;
+	font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.black12 {
+	color: #050401;
+	font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.black11 {
+	color: #53492e;
+	font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blue14 {
+	color: #a8eeff;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.white14T {
+	color: #f4d992;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+.whiteT {
+	color: #f4d992;
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+}
+.blackT {
+	color: #53492e;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+A:link {
+	color:#5c0001;
+	text-decoration: underline;
+} 
+A:visited {
+	color:#5c0001;
+	text-decoration: underline;
+} 
+A:active {
+	color:#5c0001;
+	text-decoration: underline;
+	} 
+A:hover {
+	color:#050401;
+	text-decoration: none;
+	}
+A.menu:link {
+	color: #f4d992;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+} 
+A.menu:visited {
+	color: #f4d992;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+} 
+A.menu:active {
+	color: #f4d992;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+	} 
+A.menu:hover {
+	color: #f4d992;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: underline;
+	}
+A.menu_1:link {
+	color: #8b00ff;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+} 
+A.menu_1:visited {
+	color: #8b00ff;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+} 
+A.menu_1:active {
+	color: #8b00ff;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	} 
+A.menu_1:hover {
+	color: #07506a;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	}
+A.header:link {
+	color: #00ccff;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+} 
+A.header:visited {
+	color: #00ccff;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+} 
+A.header:active {
+	color: #00ccff;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	} 
+A.header:hover {
+	color: #00ccff;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	}
+A.footer:link {
+	color:#585532;
+    font-size: 11px;
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+A.footer:visited {
+	color:#585532;
+    font-size: 11px;
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+A.footer:active {
+	color:#585532;
+    font-size: 11px;
+	text-decoration: underline;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	} 
+A.footer:hover {
+	color:#585532;
+    font-size: 11px;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+        
+#main 
+{
+    background-color: #ceb068;
+    width: 877px; 
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url(http://localhost/psychic_contact_com_new/new/public_html/advanced/images/psynet/bg_2.gif)
+}
+
+#footer
+{
+    width: 892px;
+    margin: auto;
+    background: url(http://localhost/psychic_contact_com_new/new/public_html/advanced/images/psynet/footer.jpg);
+}
+#slide-container {
+	text-align:center;
+	float:left;
+	position:relative;
+}
+
+#slide-container #slideshow {
+	width:561;
+	height:242px;
+	position:relative;
+}
+#slide-container #slideshow IMG {
+	position:absolute;
+	/*top:66px;
+	left:108px;*/
+	top:0;
+	left:0;
+}
+       
+
+#paypal_msg 
+{
+    display: none; position: absolute;
+    top: 400px;
+    left: 450px; 
+}
+
+</style> 

@@ -1,0 +1,4 @@
+<?php $this->widget('UserInfo'); ?>
+<table width="90%" align="center">
+<?php $this->widget('UserMenu'); ?>
+</table>

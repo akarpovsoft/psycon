@@ -1,0 +1,18 @@
+<?php
+$this->breadcrumbs=array(
+	'Users'=>array('index'),
+	$model->name=>array('view','id'=>$model->rr_record_id),
+	'Update',
+);
+?>
+
+<h1>Update users <?php echo $model->rr_record_id; ?></h1>
+
+<ul class="actions">
+	<li><?php echo CHtml::link('List users',array('index')); ?></li>
+	<li><?php echo CHtml::link('Create users',array('create')); ?></li>
+	<li><?php echo CHtml::link('View users',array('view','id'=>$model->rr_record_id)); ?></li>
+	<li><?php echo CHtml::link('Manage users',array('admin')); ?></li>
+</ul><!-- actions -->
+
+<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

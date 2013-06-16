@@ -1,0 +1,118 @@
+<?php
+class BlogSessions extends CActiveRecord
+{
+	/**
+	 * The followings are the available columns in table 'blog_sessions':
+	 * @var string $session_key
+	 * @var integer $session_expire
+	 * @var string $session_value
+	 */
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return CActiveRecord the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+        public function getDbConnection(){
+            return Yii::app()->blog_db;
+        }
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'blog_sessions';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('session_value', 'required'),
+			array('session_expire', 'numerical', 'integerOnly'=>true),
+			array('session_key', 'length', 'max'=>32),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'session_key' => 'Session Key',
+			'session_expire' => 'Session Expire',
+			'session_value' => 'Session Value',
+		);
+	}
+        /**
+         * Insert or update blog user seion
+         *
+         * @param <object> $sess_val
+         */
+        public function writeSession($sess_val){
+            $exist = self::model()->findByPk($this->session_key);
+            if(!empty($exist)){
+                $exist->session_value = $this->convertToSessValue($sess_val);
+                $exist->session_expire = time();
+                $exist->save();
+            } else {
+                $this->session_value = $this->convertToSessValue($sess_val);
+                $this->session_expire = time();
+                $this->save();
+            }
+        }
+        /**
+         * Delete blog session
+         *
+         * @param <string> $session_key
+         */
+        public static function deleteSession($session_key){
+            self::model()->deleteByPk($session_key);
+        }
+        /**
+         * Return current session
+         *
+         * @param <string> $session_key
+         * @return <object>
+         */
+        public static function getSession($session_key){
+            return self::model()->findByPk($session_key);
+        }
+
+        /**
+         * Return blog users session value
+         *
+         * @param <object> $sess_values
+         * @return <string> Converted string
+         */
+        protected function convertToSessValue($sess_values){
+            $ret = array();
+            $ret['username'] = $sess_values->username;
+            $ret['password'] = $sess_values->password;
+            $ret['id'] = $sess_values->id;
+
+            return serialize($ret);
+        }
+}
+?>

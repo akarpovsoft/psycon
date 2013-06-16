@@ -1,0 +1,4 @@
+<center>
+<p align="left">Psychic Contact has helped thousands of clients over the years. Whether it's advice about finding love, enriching your relationships, empowing yourself, a new career move, or just learning various ways to excel in your own Life's Journey. Our highly trained and professional readers are here to help guide you in all aspects of reaching your goals and acquiring the answers you seek, from Astrology &amp; Astral Travel to Spirit Guide Contact &amp; Tarot Cards. Our Clairvoyant Psychic Readers use their metaphysical gifts to enrich and empower you in caring and non-judgmental ways.</p><br>
+<br>
+</center>

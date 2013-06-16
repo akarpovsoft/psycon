@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users
+END
+gift.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/gift.php
+END
+clients_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/clients_list.php
+END
+mainAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/mainAdmin.php
+END
+purchases.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/purchases.php
+END
+pageReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/pageReader.php
+END
+chathistory.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/chathistory.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/_form.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/create.php
+END
+signup.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/signup.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/index.php
+END
+mainReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/mainReader.php
+END
+client_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/client_view.php
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/view.php
+END
+admin_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/admin_search.php
+END
+message_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/message_view.php
+END
+notifyreaders.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/notifyreaders.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/update.php
+END
+mainClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/mainClient.php
+END
+client_administration.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/client_administration.php
+END
+chatreaderhistory.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/chatreaderhistory.php
+END
+messagecenter.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/messagecenter.php
+END
+emailreadings_reader.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/emailreadings_reader.php
+END
+banned.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/banned.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/views/users/admin.php
+END

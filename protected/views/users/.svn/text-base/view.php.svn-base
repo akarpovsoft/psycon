@@ -1,0 +1,61 @@
+<?php
+$this->breadcrumbs=array(
+	'Users'=>array('index'),
+	$model->name,
+);
+?>
+<h1>View users #<?php echo $model->rr_record_id; ?></h1>
+
+<ul class="actions">
+	<li><?php echo CHtml::link('List users',array('index')); ?></li>
+	<li><?php echo CHtml::link('Create users',array('create')); ?></li>
+	<li><?php echo CHtml::link('Update users',array('update','id'=>$model->rr_record_id)); ?></li>
+	<li><?php echo CHtml::linkButton('Delete users',array('submit'=>array('delete','id'=>$model->rr_record_id),'confirm'=>'Are you sure to delete this item?')); ?></li>
+	<li><?php echo CHtml::link('Manage users',array('admin')); ?></li>
+</ul><!-- actions -->
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'rr_record_id',
+		'operator_location',
+		'rr_account_id',
+		'rr_emailsent',
+		'rr_synchronized',
+		'rr_createdate',
+		'rr_lastaccess',
+		'name',
+		'password',
+		'password1',
+		'password_orig',
+		'astrologers',
+		'tarotreaders',
+		'clairvoyants',
+		'area',
+		'comments',
+		'login',
+		'emailaddress',
+		'hear',
+		'day',
+		'month',
+		'year',
+		'address',
+		'phone',
+		'seniority',
+		'type',
+		'frames',
+		'status',
+		'laststatusupdate',
+		'balance',
+		'requestid',
+		'banlist',
+		'gender',
+		'affiliate',
+		'first_reading',
+		'user_type',
+		'free_mins',
+		'reader_real_name',
+		'lang',
+		'chat_type',
+	),
+)); ?>

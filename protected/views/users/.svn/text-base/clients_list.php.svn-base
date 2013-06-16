@@ -1,0 +1,17 @@
+<?php
+$this->widget('zii.widgets.grid.CGridView', array(
+    'dataProvider'=>$data,
+    'columns' => array(
+        array(
+            'name' => 'Login', //Yii::t('lang', 'Login')
+            'value' => '$data->Client_name'
+        ),
+        array(
+            
+            'class' => 'CLinkColumn',
+            'urlExpression' => '"view?id=".$data->Client_id',
+            'label' => Yii::t('lang', 'View'),
+        ),
+    ),
+));
+?>

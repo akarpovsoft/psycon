@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: #f7f3f7;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	margin-left: 10px;
+}
+
+.banner
+{
+	width: 395px;
+	height: 50px;
+}
+.mobileBanner
+{
+	width: 300px;
+	height: 50px;
+}
+
+.freeTimePadding
+{
+	padding-right: 88px;
+}
+
+.boldtext
+{
+	font-weight: bold;
+}
+
+.inputField
+{
+	width: 660px;
+	height: 30px;
+}
+.mobileInputField
+{
+	width: 230px;
+	height: 30px;
+}
+.sendButton
+{
+	height: 40px;
+	width: 80px;
+	vertical-align:bottom;
+}
+.mobileSendButton
+{
+	height: 31px;
+	width: 50px;
+	vertical-align:bottom;
+}
+.chatlog
+{
+	width: 750px;
+	height: 300px;
+	border: 1px solid #CCCCCC;
+	overflow: auto;
+	background-color:white;
+	margin-bottom: 10px;
+	float:left;
+	padding-left : 5px;
+}
+
+.mobileChatlog
+{
+        width: 280px;
+	height: 300px;
+	border: 1px solid #CCCCCC;
+	overflow: auto;
+	background-color:white;
+	margin-bottom: 10px;
+	padding-left : 5px;
+}
+
+
+.redLine, .oppName
+{ 
+	color: red;
+	font-weight: bold;
+}
+
+.blackLine
+{
+	color: black;
+}
+
+.myName
+{
+	font-weight: bold;
+	color: blue;
+}
+
+.infoTable
+{
+	font: 11px Tahoma;
+	text-align: left;
+}
+
+.endsessbtn
+{
+	vertical-align: bottom;
+	height: 40px;
+}
+
+
+.waitingEndSessionClient
+{
+	margin-top		: 1px;
+	display			: none;
+	position		: absolute;
+	left			: 11px;
+	width			: 750px;
+	height			: 300px;
+	z-index			: 9999; 
+		 
+	background-color: white;
+	filter			: alpha(opacity=90);
+	-moz-opacity	: .90;
+	opacity			: .90;
+}
+
+.waitingEndSessionClient span
+{
+	display			: block;
+	top				: 45%;
+	position		: relative;
+	text-align		: center;
+	font-size		: 18px;
+}
+
+.mobileWaitingEndSession
+{
+        margin-top		: 1px;
+	display			: none;
+	position		: absolute;
+        top                     : 50px;
+	margin                  : 0 auto;
+	width			: 290px;
+	height			: 500px;
+	z-index			: 9999; 
+		 
+	background-color: white;
+	filter			: alpha(opacity=90);
+	-moz-opacity	: .90;
+	opacity			: .90;
+}
+
+.mobileWaitingEndSession span
+{
+	display			: block;
+	top				: 45%;
+	position		: relative;
+	text-align		: center;
+	font-size		: 18px;
+}
+

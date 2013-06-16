@@ -1,0 +1,59 @@
+
+Command = newClass(null, {
+
+	constructor: function()
+	{
+	    //empty
+	},
+	
+	/**
+	* Function request only once at the chat start and checks for commands from server
+	*/
+	run: function(data)
+	{			
+		options = {
+			data    : data,
+			url     : baseChatPath + "chatcore/push",
+			success : this.success,
+			error   : this.error,
+			context : this
+		};
+		addDebugInfo('push', options.data);
+		
+		this.ajax(options);		
+	},
+
+
+	success: function(response) {
+		Chat.connectionError = false;
+		Chat.errorsCounter = 0;
+
+		if (response != null) /// timer returned
+		{
+			if(response.error)
+				Chat.handleServerError('push', response);
+
+			if(response.total_time)
+				Chat.setTime(response.chat_time, response.free_time, response.total_time);
+		}
+
+	},
+	
+	error: function(XMLHttpRequest, errorType) {
+		Chat.handleConnectionError('push', XMLHttpRequest, errorType);
+	},
+	
+	ajax: function(options) {
+		if(options.data == undefined)
+			options.data ={};
+					
+		options.type     = 'POST';
+		options.dataType = 'json';
+		options.cache    = false,
+		options.timeout  = 110000;
+		options.data.sessionKey =  sessionKey; 
+		options.data.t = (new Date).getTime();
+		$.ajax(options);
+	}
+	
+});

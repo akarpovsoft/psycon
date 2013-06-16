@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data
+END
+states.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/states.txt
+END
+gender.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/gender.txt
+END
+day_birth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/day_birth.txt
+END
+reading_type.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/reading_type.txt
+END
+countries.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/countries.txt
+END
+month_birth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/month_birth.txt
+END
+day.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/day.txt
+END
+testdrive.db
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/testdrive.db
+END
+schema.sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/schema.sqlite.sql
+END
+hear_about_us.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/hear_about_us.txt
+END
+schema.mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/schema.mysql.sql
+END
+tarif.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/tarif.inc.php
+END
+month.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/month.txt
+END
+creditcards.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/creditcards.txt
+END
+oldnew.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/oldnew.txt
+END
+year_birth.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/year_birth.txt
+END
+empty_file.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/empty_file.jpg
+END
+year.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/psychic_com/!svn/ver/683/psychiccontact_com/trunk/protected/data/year.txt
+END

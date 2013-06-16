@@ -1,0 +1,11 @@
+<h1><a href="<?php echo Yii::app()->params['http_addr'].GoFishFunc::Adres().'/manage/index';?>" > Manage Answers</a></h1>
+<h1>Manage Fish models</h1>
+<form action="#" method="post">
+<table>
+<tr><td>Reader</td><td>Model</td></tr>
+<?php foreach ($readers as $reader) {
+    echo '<tr><td>'.$reader->name.'</td><td>'.GoFishFunc::writeSelect($reader->rr_record_id).'</td></tr>';
+} ?>
+</table>
+<input type="submit" value="Update" /> <br /><br />
+</form>

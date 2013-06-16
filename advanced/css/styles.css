@@ -1,0 +1,513 @@
+body
+{
+	background:#126393 url('http://www.psychic-contact.com/advanced/new_images/bgMainGrad.png') repeat-x left top;
+	margin:0;
+	padding:0;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	color:White;
+}
+input, label, div
+{
+	padding:0;
+	margin:0;
+}
+
+	
+img
+{
+	border:0;
+	padding:0;
+	margin:0;
+}
+a
+{
+	color: #FFFFFF;
+    text-decoration: none;
+}
+a:visited {
+  
+
+}
+a:hover
+{
+	text-decoration:underline;
+}
+
+
+.main
+{
+
+}
+
+.mainLeftWrapper
+{
+	margin-right: -550px; width: 50%; float: left;
+}
+.mainLeft
+{
+	margin-right: 550px;
+	
+
+}
+.mainCenter
+{
+	width:1100px;
+	
+	float:left;
+	posistion:relative;
+	
+}
+.mainTopRight
+{
+	height:32px;
+	background:url('http://www.psychic-contact.com/advanced/new_images/bgTopRight.png') no-repeat left top;
+	margin-left:452px;
+	padding-left:395px;
+	padding-top:4px;
+	
+}
+.menuTop
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/menu.png') no-repeat left top;
+	padding-left:100px;
+
+	height:57px;
+	color:White;
+
+}
+.menuTop div
+{
+	padding-top:15px;
+	width:910px;
+	text-align:center;
+}
+.menuTop a
+{
+	padding:0px 5px 0 7px;
+}
+
+
+.mainTopRight a
+{
+	color:White;
+	margin-left:17px;
+	width:24px;
+	height:24px;
+}
+
+
+.mainTop2
+{
+	clear:both;	
+	background:url('http://www.psychic-contact.com/advanced/new_images/bgMainTop.png') no-repeat left 32px;
+	height:124px;
+	position:relative;
+	
+
+}
+div#logo
+{
+	margin-left:89px;
+	float:left;
+}
+.mainAD
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/bgMainCenter.png') no-repeat left top;
+	height:330px;
+	margin:0;
+	
+}
+div.hr1
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/hr1.png') no-repeat left top;
+	height:5px;
+	margin-left:200px;
+	margin-top:10px;
+}
+/************/
+#slide-container {
+	text-align:center;
+	margin-left:108px;
+	margin-top:66px;
+	float:left;
+	position:relative;
+}
+#slide-container #slideshow {
+	width:521;
+	height:260px;
+	position:relative;
+}
+#slide-container #slideshow IMG {
+	position:absolute;
+	/*top:66px;
+	left:108px;*/
+	top:0;
+	left:0;
+}
+/************/
+div#adMessage
+{
+	position:relative;
+	margin-left:650px;
+	padding-top:45px;
+	width:350px;
+	color:White;
+	font-size:18px;
+	font-weigth:bold;
+	text-align:center;
+}
+div#adMessage a, #leftContent a, div.readerInfo a
+{
+	color:#6ae038;
+}
+p
+{
+	text-indent:15px;
+	line-height:15pt;
+}
+div#adMessage  i p
+{
+	font-size:26px;
+	text-indent:0;
+	line-height:28px;
+}
+* html div#adMessage 
+{
+	padding-top:65px;
+}
+.mainContent
+{
+		
+	clear:both;
+	background:url('http://www.psychic-contact.com/advanced/new_images/bgMainBottom.png') no-repeat left bottom;
+	background-repeat: repeat-y;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	overflow:hidden;
+}
+.standartContent
+{
+        clear:both;	
+	background-repeat: repeat-y;
+	margin-bottom:10px;
+	padding-bottom:15px;
+	overflow:hidden;
+}
+
+.mainContentClear
+{
+        clear:both;
+	background:url('http://www.psychic-contact.com/advanced/new_images/bgMainBottom.png') no-repeat left bottom;
+	
+	margin: auto;
+	padding-bottom:15px;
+	overflow:hidden;
+        width: 1100px;
+}
+
+#leftContent
+{
+	float:left;
+	margin-left:108px;
+	padding-top:20px;
+	width:600px;
+	position:relative;
+        font-size: 13px;
+
+}
+.contentBox2
+{
+	overflow:hidden;
+	margin-top:10px;
+	border: solid 3px #093b5c;
+}
+
+#linksBox1
+{z
+	overflow:hidden;
+	margin-left:300px;
+	background:url('http://www.psychic-contact.com/advanced/new_images/f_right.png') repeat-y left top;
+}
+*html #linksBox1
+{
+	
+	margin-left:280px;
+}
+#loginBox
+{
+	float:left;
+	width:280px;
+	background-color:#126393;
+	overflow:hidden;
+	
+	/*background:url('../img/bgBox.png') no-repeat left top;*/
+}
+#loginBox, #linksBox1
+{
+
+	padding:10px;
+	height:200px;
+	
+	
+}
+.formField
+{
+	margin:0;
+	padding-top:10px;
+	overflow:hidden;
+	position:relative;
+
+} 
+#loginBox .formField  input
+{
+	width:130px;
+	padding:0;margin:0;
+}
+
+#loginBox .formField label
+{
+		
+	/*	width:30%;*/
+	
+float: left;
+  text-align: left;
+  margin-right:   15px;
+  width: 100px;
+
+
+
+}
+
+#loginButton
+{	
+	overflow:hidden;
+	text-align:right;
+	padding-top:10px;
+}
+#loginButton a
+{
+	float:left;
+	padding-top:15px;
+}
+#loginButton input
+{
+	border:none;
+	background:#1C90BF url('http://www.psychic-contact.com/advanced/new_images/button.png') no-repeat left top;
+	padding:5px;
+	width:80px;
+	height:35px;
+	color:White;
+
+}
+
+.header1
+{
+	
+	background:url('http://www.psychic-contact.com/advanced/new_images/f_0.png');
+	margin:0;
+	padding:4px;
+	display:block;
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	border: solid 1px #093b5c;
+}
+
+ul.links1
+{
+	list-style-image: url('http://www.psychic-contact.com/advanced/new_images/m_1.png');
+	
+}
+
+ul.links1 li 
+{
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:4px;
+	font-size:15px;
+	font-weight:bold;
+	
+	
+}
+ul.links2 
+{
+	margin-right:20px;
+	margin-top:15px;
+	float:left;
+}
+#linksBox2 img
+ {
+ 	margin:20px;
+ 	margin-left:30px;
+ 	margin-top:15px;
+ }
+
+ul.links2 li
+{
+	list-style:none;
+	font-size:14px;
+	padding-top:5px;
+	padding-bottom:3px;
+}
+ #linksBox2
+ {
+ 	clear:both;
+ 	
+
+ 	margin-top:20px;
+ 	
+ 	overflow:hidden;
+ 	border:solid 2px #1C90BF;
+	background-color:#126393;
+ }
+#rightContent
+{
+	margin-left:708px;
+	padding-left:15px;
+	
+
+
+}
+#rightContent .header1
+{
+	width:250px;
+	border: solid 1px #126393;
+}
+
+
+div.readerInfo
+{
+	width:250px;
+	border:solid 2px #1C90BF;
+	background-color:#126393;
+	padding:5px;
+	margin-top:10px;
+	position:relative;
+	overflow:hidden;
+}
+div.readerInfo div.readerPhoto
+{
+	float:left;
+	width:104px;
+}
+div.readerInfo div.readerDetails
+{
+
+	margin-left:108px;
+}
+div.readerInfo b
+{
+	font-size:15px;
+	
+}
+div.readerInfo i
+{
+display:block;
+}
+div.readerInfo p
+{
+	text-align:right;
+}
+div.readerInfo div.readerPhoto img
+{
+	border:1px solid #ccc;
+	width:100px;
+	height:100px;
+	
+
+}
+div.readerInfo p
+{
+	margin:0;
+	padding:0;
+}
+div.readerInfo div.readerClients
+{
+	clear:both;
+	text-align:right;
+}
+.mainRightWrapper
+{
+	width: 50%; float: left; margin-left: -550px
+}
+.mainRight
+{
+	
+
+		
+}
+* html .mainRightWrapper { width: 49.999%; } .mainRight { margin-left: 550px; } 
+
+#footer
+{
+	clear:both;	
+	padding-top:5px;
+	margin:0;
+	width:100%;
+	
+
+	background:url('http://www.psychic-contact.com/advanced/new_images/f_3.png') no-repeat left bottom;
+	overflow:hidden;
+}
+#footerMenu
+{
+	width:922px;
+	margin-left:89px;
+	margin-right:89px;
+	font-size:12px;
+	margin-bottom:25px;
+	text-align:center;
+}
+#footerMenu a
+{
+	text-decoration:underline;
+	padding-right:3px;
+}
+#footerCopy
+{
+	float:right;
+	width:250px;;
+	margin-left:220px;
+        margin-right:89px;
+	font-size:10px;	
+	padding-right:20px;
+	text-align:right;
+	overflow:hidden;
+}
+#footerLogos
+{
+	margin-left:89px;
+	text-align:right;
+		padding-left:20px;
+		
+	
+}
+.headerWrapper1
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/sh_1.png') no-repeat left top;
+	height:15px;
+}
+.headerWrapperWithoutBG1
+{	
+	height:15px;
+}
+.headerWrapper2
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/sh_2.png') no-repeat left bottom;
+	height:5px;
+}
+.headerWrapperWithoutBG2
+{	
+	height:5px;
+}
+.headerWrapper3
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/sh_3.png') no-repeat 50% top;
+	height:15px;
+}
+.headerWrapper4
+{
+	background:url('http://www.psychic-contact.com/advanced/new_images/sh_4.png') no-repeat left bottom;
+	height:15px;
+}

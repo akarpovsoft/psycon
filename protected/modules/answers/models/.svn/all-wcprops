@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/psychic_com/!svn/ver/740/psychiccontact_com/trunk/protected/modules/answers/models
+END
+SiteQuestion.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/psychic_com/!svn/ver/740/psychiccontact_com/trunk/protected/modules/answers/models/SiteQuestion.php
+END
+SiteQuestionUsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/psychic_com/!svn/ver/719/psychiccontact_com/trunk/protected/modules/answers/models/SiteQuestionUsers.php
+END
+answersFunc.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/psychic_com/!svn/ver/739/psychiccontact_com/trunk/protected/modules/answers/models/answersFunc.php
+END
+SiteQuestionSessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/psychic_com/!svn/ver/725/psychiccontact_com/trunk/protected/modules/answers/models/SiteQuestionSessions.php
+END
+SiteAnswers.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/psychic_com/!svn/ver/740/psychiccontact_com/trunk/protected/modules/answers/models/SiteAnswers.php
+END

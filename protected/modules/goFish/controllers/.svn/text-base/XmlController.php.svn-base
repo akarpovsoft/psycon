@@ -1,0 +1,250 @@
+<?php
+
+class XmlController extends PsyController
+{
+    public function actionRegister()
+    {
+        if (isset($_GET['fname']))
+        {
+            if (!$_GET['lname'])
+            {
+                $error[] = 'Last Name cannot be blank';
+            }
+            if ($_GET['email'])
+            {
+                if (!preg_match("%^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z])+$%",
+                    $_GET['email']))
+                {
+                    $error[] = 'Invalid email';
+                }
+            } else
+            {
+                $error[] = 'Email cannot be blank';
+            }
+            if (!$_GET['dob'])
+            {
+                $error[] = 'Date of Birth cannot be blank';
+            }
+            if ($error)
+            {
+                // go error xml
+                foreach ($error as $err)
+                {
+                    $textError .= $err . '. ';
+                }
+                $dom = new DOMDocument('1.0', 'utf-8');
+                $root = $dom->createElement('result');
+                $root->setAttribute('code', 'error');
+                $text = $dom->createElement('message');
+                $cont = $dom->createCDATASection($textError);
+                $text->appendChild($cont);
+                $root->appendChild($text);
+                $dom->appendChild($root);
+                $this->renderPartial('goXML', array('dom' => $dom));
+                die();
+            } else
+            {
+                $model = new GoFishUsers;
+                $model->fname = $_GET['fname'];
+                $model->lname = $_GET['lname'];
+                $model->email = $_GET['email'];
+                $model->DOB = $_GET['dob'];
+                if ($model->save())
+                {
+                    $dom = new DOMDocument('1.0', 'utf-8');
+                    $root = $dom->createElement('result');
+                    $root->setAttribute('code', 'ok');
+                    $dom->appendChild($root);
+                    $this->renderPartial('goXML', array('dom' => $dom));
+                    die();
+                }
+            }
+        }
+    }
+
+    public function actionGetFishList()
+    {
+        $group_id = GoFishModule::GROUP_ID;
+        $category = $_GET['cat'];
+        $online_only = 0;
+        $readerList = ReadersOnline::availableReaders($online_only, $category, $group_id);
+        $dom = new DOMDocument('1.0', 'utf-8');
+        $root = $dom->createElement('readers');
+        $i = 0;
+        if ($readerList)
+        {
+            foreach ($readerList as $reader)
+            {
+                if (GoFishFishes::haveModel($reader['rr_record_id']))
+                {
+                    if ($i < 12)
+                    {
+                        $readerDom = $dom->createElement('reader');
+                        $root->appendChild($readerDom);
+                        $readerDom->setAttribute('id', $reader['rr_record_id']);
+                        $readerDom->setAttribute('name', $reader['name']);
+                        $readerDom->setAttribute('fish', GoFishFunc::getFishModel($reader['rr_record_id']));
+                        $readerDom->setAttribute('status', $reader['status']);
+                    } else
+                    {
+                        break;
+                    }
+                    $i++;
+                }
+            }
+        }
+        $dom->appendChild($root);
+        $this->renderPartial('goXML', array('dom' => $dom));
+        die();
+    }
+
+
+    public function actionGetAllFishList()
+    {
+        $group_id = GoFishModule::GROUP_ID;
+        $category = $_GET['cat'];
+        $online_only = 0;
+        $readerList = ReadersOnline::availableReaders($online_only, $category, $group_id);
+        $dom = new DOMDocument('1.0', 'utf-8');
+        $root = $dom->createElement('readers');
+        if ($readerList)
+        {
+            foreach ($readerList as $reader)
+            {
+                if (GoFishFishes::haveModel($reader['rr_record_id']))
+                {
+                    $readerDom = $dom->createElement('reader');
+                    $root->appendChild($readerDom);
+                    $readerDom->setAttribute('id', $reader['rr_record_id']);
+                    $readerDom->setAttribute('name', $reader['name']);
+                    $readerDom->setAttribute('fish', GoFishFunc::getFishModel($reader['rr_record_id']));
+                    $readerDom->setAttribute('status', $reader['status']);
+                    $text = $dom->createElement('area');
+                    $cont = $dom->createCDATASection($reader['area']);
+                    $text->appendChild($cont);
+                    $readerDom->appendChild($text);
+                }
+            }
+        }
+        $dom->appendChild($root);
+        $this->renderPartial('goXML', array('dom' => $dom));
+        die();
+    }
+
+    public function actionGetFish()
+    {
+        if ((isset($_GET['id']) && !isset($_GET['name'])) || (!isset($_GET['id']) &&
+            isset($_GET['name'])))
+        {
+
+            if (isset($_GET['id']))
+            {
+                $reader = Readers::getReader($_GET['id']);
+            } else
+                if (isset($_GET['name']))
+                {
+                    $reader = Readers::getReaderByName($_GET['name']);
+                }
+            $dom = new DOMDocument('1.0', 'utf-8');
+            if ($reader)
+            {
+                $reader->comments = ereg_replace("\r", "", $reader->comments);
+                $reader->comments = ereg_replace("\n", "<BR>", $reader->comments);
+                $root = $dom->createElement('reader');
+                $root->setAttribute('id', $reader->rr_record_id);
+                $root->setAttribute('name', $reader->name);
+                $root->setAttribute('fish', GoFishFunc::getFishModel($reader['rr_record_id']));
+                $root->setAttribute('status', Readers::getReaderChatStatus($reader->
+                    rr_record_id));
+                $text0 = $dom->createElement('area');
+                $cont0 = $dom->createCDATASection($reader->area);
+                $text0->appendChild($cont0);
+                $root->appendChild($text0);
+                $text = $dom->createElement('comments');
+                $cont = $dom->createCDATASection(iconv("cp1251", "UTF-8", $reader->comments));
+                $text->appendChild($cont);
+                $root->appendChild($text);
+                $text2 = $dom->createElement('testimonials');
+                $cont2 = $dom->createCDATASection(iconv("cp1251", "UTF-8", $reader->
+                    testimonials));
+                $text2->appendChild($cont2);
+                $root->appendChild($text2);
+                $dom->appendChild($root);
+            } else
+            {
+                $dom = new DOMDocument('1.0', 'utf-8');
+                $root = $dom->createElement('result');
+                $root->setAttribute('code', 'error');
+                $dom->appendChild($root);
+            }
+            $this->renderPartial('goXML', array('dom' => $dom));
+            //end xml
+            die();
+        }
+    }
+
+    public function actionGetPredictionText()
+    {
+        if (isset($_GET['id']))
+        {
+            $answer = GoFishAnswers::getRandomAnswer($_GET['id']);
+            $dom = new DOMDocument('1.0', 'utf-8');
+            if ($answer)
+            {
+                $root = $dom->createElement('prediction');
+                $root->setAttribute('id', $answer->id);
+                $cont = $dom->createCDATASection($answer->content);
+                $root->appendChild($cont);
+                $dom->appendChild($root);
+            }
+            $this->renderPartial('goXML', array('dom' => $dom));
+            die();
+        }
+    }
+
+    public function actionGetPredictionSound()
+    {
+        if (isset($_GET['id']))
+        {
+            $answer = GoFishAnswers::getByPk($_GET['id']);
+            if ($answer->sound)
+            {
+                $file = Yii::app()->params['http_addr'] . 'sound/' . $answer->sound;
+                @$fh = fopen($file, 'r');
+                if (!$fh)
+                {
+                    header("HTTP/1.0 404 Not Found");
+                    echo 404;
+                    exit;
+                }
+                $filename = basename($file);
+                header('Content-disposition: attachment;  filename=' . $filename);
+                header("Content-type: audio/mpeg");
+                fpassthru($fh);
+                @fclose($fh);
+                exit();
+            }
+        }
+    }
+
+    public function actionWakeUp()
+    {
+        $body = 'DATE : ' . date("M j, Y") . '<br>TIME SENT: ' . date("h:i a") .
+            '<br>FROM: GoFish User<br>
+            PLEASE TRY TO LOG ON AS SOON AS YOU RECEIVE THIS EMAIL';
+        if (isset($_GET['id']))
+        {
+            $reader = Readers::getReader($_GET['id']);
+            if ($reader)
+            {
+                $subject = 'CHAT REQUEST from GoFish to You';
+                PsyMailer::send($reader->emailaddress,$subject, $body);
+            }
+        } else
+        {
+            $subject = 'CHAT REQUEST from GoFish to all Readers';
+            PsyMailer::sendToAllOfflineReaders($subject, $body);
+        }
+
+    }
+}

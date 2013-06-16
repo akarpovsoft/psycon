@@ -1,0 +1,186 @@
+-- Please Select --
+Albania
+Algeria
+Angola
+Anguilla
+Antigua
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbejan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Barbuda
+Belarus
+Belgium
+Belize
+Bermuda
+Bolivia
+Bonaire
+Bosnia
+Botswana
+Brazil
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Central America
+Chad
+Chile
+China
+China (Beijing)
+China (Shanghai)
+China(GuangZhou)
+Colombia
+Comoros
+Congo Brazzaville
+Costa Rica
+Croatia
+Curacao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominican Republic
+Dubai
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Finland
+France
+Gabon
+Gambia
+Germany
+Ghana
+Greece
+Grenada
+Guadeloupe
+Guatemala
+Haiti
+Holland &amp; Luxembourg
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Ivory Coast
+Jamaica
+Japan
+Jordan
+Kenya
+Kirgizstan
+Korea
+Kuwait
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Lithuani
+Lithuania
+Luxembourg
+Macau
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Malta
+Martinique
+Mauritania
+Mauritius
+Mexico
+Moldova
+Monserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Norway
+Oman
+Pakistan
+Panama
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Puerto Rico
+Quatar
+Romania
+Russia
+Rwanda
+Sao Tome &amp; Principe
+Saudi Arabia
+Senegal
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Somalia
+South Africa
+Spain
+Sri Lanka
+St Kitts and Nevis
+St Lucia
+St Vincent and the Grenadines
+St. Barts
+St. Eustatius
+St. Martin and St. Maarten
+Sudan
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+UAE (United Arab Emirates)
+Uganda
+Ukraine
+United Kingdom
+United States
+Upper Volta
+Uruguay
+Uzbekistan
+Venezuela
+Vietnam
+Western Sahara
+Yugoslavia
+Zaire
+Zambia
+Zimbabwe

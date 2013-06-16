@@ -1,0 +1,80 @@
+// Inherited class.
+ChatClient = newClass(Chat,
+{
+	
+    setTime: function(chat_time, free_time, total_time)
+    {
+        var chat_time_m = Math.floor(chat_time / 60);
+        var chat_time_s = Math.floor(chat_time % 60);
+        var total_time_m = Math.floor(total_time / 60);
+        var total_time_s = Math.floor(total_time % 60);
+        
+        chat_time_m = (chat_time_m <= 0) ? 0 : chat_time_m;
+        chat_time_s = (chat_time_s <= 0) ? 0 : chat_time_s;
+        total_time_m = (total_time_m <= 0) ? 0 : total_time_m;
+        total_time_s = (total_time_s <= 0) ? 0 : total_time_s;
+        
+        $("#timeRemaining").val(_f(chat_time_m)+":"+_f(chat_time_s));
+        $("#totalTimeRem").val(_f(total_time_m)+":"+_f(total_time_s));
+    },
+
+	endSession: function()
+	{
+		if(window.confirm(Are_you_sure_you_want))
+		{
+			$('#waiting_end_session').show();
+			var params = new Object();
+			params.addLost = 0;
+			ChatClient.endSessionWaiting = setTimeout(function() { Chat.closeSession();}, 10000);
+	        this.command.run({'command' : 'endSession'});
+		}
+	},
+	
+	closeSession: function()
+	{
+		clearTimeout(Chat.endSessionWaiting);
+				
+		clearInterval(Chat.chatTick);
+		alert(Your_session_is_now_over);
+		location.href = baseChatPath+'client/endSession?session_key='+sessionKey;
+	},
+
+	connectionLost : function(params)
+	{
+		clearInterval(Chat.chatTick);
+
+		alert("Your session ended due to technical difficulties- please check to see"+
+			 " if your Reader has now become available again- or, try selecting another Reader");
+		location.href = baseChatPath+'client/endSession?session_key='+sessionKey;
+	},
+
+	addTime: function(time)
+	{
+		if(window.confirm(Are_you_sure_to_add+time+mins_more_for_the_current_session))
+		data = { "command" : "addTime", 
+				"params" : {"time" : time*60}
+		};
+        this.command.run(data);
+	},
+	
+	buyMoreTime: function()
+	{
+		if(window.confirm(Are_you_sure_you_want_to_purchase_more_time))
+		{
+			var params = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes"
+			var url = paymentUrl+'?session_key='+sessionKey;
+			var newWin = window.open(url, "_blank", params);
+			newWin.focus();
+
+		}
+	}
+
+});
+
+
+var Chat = '';
+function pageInit()
+{
+	Chat = new ChatClient();
+	init();
+}

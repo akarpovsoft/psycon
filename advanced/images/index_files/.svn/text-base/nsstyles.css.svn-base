@@ -1,0 +1,944 @@
+<STYLE>
+
+BODY 
+{
+  MARGIN-TOP: 2px; MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px
+
+ font: 10pt verdana, Helvetica, Sans-Serif;
+}
+
+UNKNOWN 
+{
+}
+.TextHelp 
+{
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 11px;
+	COLOR: #42595A; 
+}
+.TextStep
+{
+	FONT-SIZE: 13px;
+	FONT-FAMILY: Verdana, Arial, sans-serif;
+	COLOR: #406F6F;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: none;
+}
+
+
+.ppbigtext
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 17px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppheadingshops
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 17px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppheading
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 17px;
+    COLOR: #003366;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppcobrand
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 21px;
+    COLOR: #003366;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppmediumtext
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 15px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsubheading
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 15px;
+    COLOR: #003366;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pptext
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pptextbold
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppnote
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    COLOR: #999999;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pperror
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    COLOR: #ff0000;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pperrorbold
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    COLOR: #ff0000;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppmessage
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmalltext
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmalltextbold
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmallnote
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    COLOR: #999999;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmallerror
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    COLOR: #ff0000;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmallerrorbold
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #ff0000;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pplabel
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pplabelerror
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #ff0000;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pplabelgrey
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #666666;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pplabelgreyerror
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    COLOR: #ff0000;
+    PADDING-TOP: 1px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppfooter
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppsmalltextboldwhite
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppbutton
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: outset;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BACKGROUND-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: outset
+}
+.ppbuttonhot
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: outset;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BACKGROUND-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: outset
+}
+.ppbuttonsmall
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: outset;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BACKGROUND-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: outset
+}
+.ppbuttonverysmall
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: outset;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BACKGROUND-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: outset
+}
+.ppscnormal
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppscbig
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 15px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppscbutton
+{
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    BORDER-TOP-STYLE: outset;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BACKGROUND-COLOR: #cccccc;
+    BORDER-BOTTOM-STYLE: outset
+}
+.ppscmessage
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 15px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppinlineoptional
+{
+    FONT-WEIGHT: 400
+}
+.ppinlinedisabled
+{
+    COLOR: #999999
+}
+.ppinlinefootnote
+{
+    COLOR: #999999
+}
+.ppinlineerror
+{
+    COLOR: #ff0000
+}
+.ppinlineerrorbold
+{
+    FONT-WEIGHT: 700;
+    COLOR: #ff0000
+}
+.ppinlineyellowbg
+{
+    BACKGROUND-COLOR: #ffffcc
+}
+.ppinlinelightgreybg
+{
+    BACKGROUND-COLOR: #e6e6e6
+}
+.ppinlinedarkgreybg
+{
+    BACKGROUND-COLOR: #cccccc
+}
+.ppinlinedisabledgrey
+{
+    COLOR: #666666;
+    BACKGROUND-COLOR: #e6e6e6
+}
+.ppinlinepaypalblue
+{
+    COLOR: #336699
+}
+.ppinlinewhite
+{
+    COLOR: #ffffff
+}
+.ppinlinereward
+{
+    COLOR: #00aa00
+}
+.ppinlinegreen
+{
+    COLOR: #00aa00
+}
+.ppinlinered
+{
+    COLOR: #ff0000
+}
+.ppinlineblue
+{
+    COLOR: #0000ff
+}
+.ppinlinegreyongrey
+{
+    COLOR: #333333
+}
+.ppinlinemedgrey
+{
+    COLOR: #999999
+}
+.ppinlinemoneygreen
+{
+    COLOR: #336633
+}
+.ppleftnav_parent
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    PADDING-BOTTOM: 0px;
+    LINE-HEIGHT: 110%;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppleftnav_child
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 15px;
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 13px;
+    PADDING-BOTTOM: 5px;
+    LINE-HEIGHT: 110%;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppleftnav_parent_small
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 0px;
+    LINE-HEIGHT: 110%;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.ppleftnav_child_small
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 15px;
+    FONT-WEIGHT: 400;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 5px;
+    LINE-HEIGHT: 110%;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.pptabtext
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 13px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,helvetica,arial,sans-serif;
+    TEXT-DECORATION: none
+}
+.ppsubtabtextoff
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,helvetica,arial,sans-serif;
+    TEXT-DECORATION: none
+}
+.ppsubtabtextoff:hover
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,helvetica,arial,sans-serif;
+    TEXT-DECORATION: underline
+}
+.ppsubtabtextoffspacer
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: verdana,helvetica,arial,sans-serif;
+    TEXT-DECORATION: none
+}
+.ppsubtabtexton
+{
+    FONT-WEIGHT: 700;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: verdana,helvetica,arial,sans-serif;
+    TEXT-DECORATION: none
+}
+
+
+.LinkTinyRed
+{
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	COLOR: #FF0000;  
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.TextStepSelected
+{
+	FONT-SIZE: 13px;
+	FONT-FAMILY: Verdana, Arial, sans-serif;
+	COLOR: #974625;
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: underline;
+}
+.TextButton 
+{
+	FONT-SIZE: 11px; 
+	COLOR: black; 
+	FONT-FAMILY: Tahoma, sans-serif;
+	text-decoration:none; 
+}
+.TextButtonGray
+{
+	FONT-SIZE: 11px; 
+	COLOR: #888888; 
+	FONT-FAMILY: Tahoma, sans-serif;
+	text-decoration:none; 
+}
+
+.LinkButton 
+{
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: Microsoft sans serif, sans-serif;
+	COLOR: #0000FF; 
+	text-decoration:underline; 
+}
+.LinkButton:hover
+{
+	FONT-SIZE: 11px; 
+	FONT-FAMILY: Microsoft sans serif, sans-serif;
+	COLOR: #FF0000; 
+	text-decoration:underline; 
+}
+
+
+.TextTiny 
+{
+	FONT-SIZE: 10px; 
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+
+.TextSmall 
+{
+	FONT-SIZE: 11px; 
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.TextSmallNoDecoration
+{
+	FONT-SIZE: 11px; 
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Arial, sans-serif;
+	TEXT-DECORATION: none;
+}
+.TextInfoTitle 
+{
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	COLOR: black; 
+	FONT-FAMILY: Microsoft sans serif, sans-serif
+}
+.TextInfoDescription 
+{
+	FONT-SIZE: 11px; 
+	COLOR: black; 
+	FONT-FAMILY: Microsoft sans serif, sans-serif
+}
+.TextMedium 
+{
+	FONT-SIZE: 13px; 
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkMediumNoU 
+{
+	FONT-SIZE: 13px; 
+	COLOR: #0000FF; 
+	text-decoration:none; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkMediumNoU:hover 
+{
+	FONT-SIZE: 13px; 
+	COLOR: #FF0000; 
+	text-decoration:underline; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkMedium 
+{
+	FONT-SIZE: 13px; 
+	COLOR: #0000FF; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkMedium:hover 
+{
+	FONT-SIZE: 13px; 
+	COLOR: #FF0000; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.TextGreyMedium
+{
+	FONT-SIZE: 13px; 
+	COLOR: #666666; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkGreySmall 
+{
+	FONT-SIZE: 11px; 
+	COLOR: #666666; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkGreySmall:hover 
+{
+	FONT-SIZE: 11px; 
+	COLOR: #ff6600; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallBlue 
+{
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	text-decoration:none; 
+	COLOR: #0000FF;  
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallNoU
+{
+	FONT-SIZE: 11px; 
+	text-decoration:none; 
+	COLOR: #0000FF; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+
+.LinkSmallNoU:hover 
+{
+	FONT-SIZE: 11px; 
+	text-decoration:none; 
+	COLOR: #FF0000; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+
+.LinkSmallBlue:hover 
+{
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	text-decoration:none; 
+	COLOR: #0000FF; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallWhite 
+{
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	text-decoration:none; 
+	COLOR: white;  
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkChart
+{
+	FONT-SIZE: 11px; 
+	text-decoration:none; 
+	COLOR: black;
+	FONT-FAMILY: Tahoma;
+}
+.LinkTinyWhite 
+{
+	FONT-SIZE: 10px; 
+	FONT-WEIGHT: bold; 
+	COLOR: white;  
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallWhite:hover 
+{
+	FONT-SIZE: 11px; 
+	FONT-WEIGHT: bold; 
+	text-decoration:none; 
+	COLOR: white; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+
+.LinkSmall 
+{
+	FONT-SIZE: 11px; 
+	COLOR: #0000FF; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallBlackNoU
+{
+	FONT-SIZE: 11px; 
+	text-decoration:none; 
+	COLOR: #42595A; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallWhiteNoU
+{
+	FONT-SIZE: 12px; 
+	text-decoration:bold; 
+	COLOR: white; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallWhiteNoU:hover
+{
+	FONT-SIZE: 12px; 
+	text-decoration:bold; 
+	COLOR: #FFC73C; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmallBlack
+{
+	FONT-SIZE: 11px; 
+	COLOR: #42595A; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkSmall:hover 
+{
+	FONT-SIZE: 11px; 
+	COLOR: #FF0000; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkTiny 
+{
+	FONT-SIZE: 10px; 
+	COLOR: #0000FF; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.LinkTiny:hover 
+{
+	FONT-SIZE: 10px; 
+	COLOR: #FF0000; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.TextLarge 
+{
+	FONT-SIZE: 18px; 
+	COLOR: black; 
+	FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.ListBox 
+{
+	BORDER-RIGHT: #999999 2px solid; 
+	BORDER-TOP: #999999 2px solid; 
+	FONT-SIZE: 11px; 
+	PADDING-BOTTOM: 2px; 
+	MARGIN: 0px; 
+	BORDER-LEFT: #999999 2px solid; 
+	BORDER-BOTTOM: #999999 2px solid; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}
+.InputBox 
+{
+	FONT-SIZE: 12px; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff;
+}
+.InputBoxLabel 
+{
+	BORDER-RIGHT: #999999 0px solid; 
+	PADDING-RIGHT: 0px; 
+	BORDER-TOP: #999999 0px solid; 
+	PADDING-LEFT: 0px; 
+	FONT-SIZE: 11px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	BORDER-LEFT: #999999 0px solid; 
+	PADDING-TOP: 0px; 
+	BORDER-BOTTOM: #999999 0px solid; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	HEIGHT: 22px; 
+	BACKGROUND-COLOR: #EFEBDE;
+}
+.InputBoxFront 
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 400px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}  
+.InputBoxFrontMedium
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 300px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}
+.form
+{
+	FONT-SIZE: 12px; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}   
+.InputBoxSmall
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 170px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}  
+.InputBoxTiny
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 100px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}  
+.InputBoxGray 
+{
+	WIDTH: 400px;
+	FONT-SIZE: 12px; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	COLOR: #6B696B;
+}  
+.InputBoxGrayTiny
+{
+	WIDTH: 100px;
+	FONT-SIZE: 12px; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	COLOR: #6B696B;
+}  
+
+.InputBoxDouble 
+{
+	BORDER-RIGHT: #7B9EBD 1px solid; 
+	BORDER-TOP: #7B9EBD 1px solid; 
+	FONT-SIZE: 12px; 
+	BORDER-LEFT: #7B9EBD 1px solid; 
+	BORDER-BOTTOM: #7B9EBD 1px solid; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}  
+.TextAreaBoxGray
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 400px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #EFEBDE; 
+	COLOR: #6B696B;
+}
+
+.TextAreaBox 
+{
+	FONT-SIZE: 12px; 
+    WIDTH: 400px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+}
+.Button 
+{
+	 BORDER-RIGHT: #000000 1px solid; 
+	 COLOR: white; 
+	 BORDER-TOP: #ffffff 1px solid; 
+	 FONT-SIZE: 12px; 
+	 BORDER-LEFT: #ffffff 1px solid; 
+	 BORDER-BOTTOM: #000000 1px solid; 
+	 FONT-FAMILY: Verdana, Arial, sans-serif; 
+	 BACKGROUND-COLOR: #1D2695;
+	 cursor: hand;
+}
+.SelectBox 
+{
+	FONT-SIZE: 9pt; 
+	WIDTH: 400px;
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}
+.SelectBoxStandard
+{
+	FONT-SIZE: 9pt; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}
+
+.SelectBoxSmall 
+{
+	WIDTH: 200px;
+	FONT-SIZE: 9pt; 
+	FONT-FAMILY: Verdana, Arial, sans-serif; 
+	BACKGROUND-COLOR: #ffffff
+}
+.box1-title,.box-title,.box2-title,.box-title-format 
+{
+	background: url("boxdevelop.gif") #EFEBDE repeat-x scroll;
+}
+.box5-title 
+{
+	background: url("boxdevelop2.gif") #3a4dbe repeat-x scroll;
+}
+
+.box-title {
+	padding: 3px;
+	font-weight: bold;
+/*  font-size: 0.75em;*/
+	border: 0px solid #949A9C;
+	border-bottom: 0px solid #000;
+	color: #eee;
+		letter-spacing: 0.05em;
+	border: none; 
+	margin: 0px;
+}
+.top-border {
+	border-top: 1px solid #7B9EBD;
+	border-left: 1px solid #7B9EBD;
+	border-right: 1px solid #7B9EBD;
+	border-bottom: 0px solid #7B9EBD;
+}
+.box1-title {
+	padding: 3px;
+/*  font-size: 0.75em;*/
+/*	border: 1px solid #7B9EBD;*/
+	border-bottom: 1px solid #7B9EBD;
+	border-left: 1px solid #7B9EBD;
+	border-right: 1px solid #7B9EBD;
+	border-top: 0px solid #7B9EBD;
+	color: #eee;
+}
+.box2-title {
+	padding: 3px;
+/*  font-size: 0.75em;*/
+	border: 1px solid #949A9C;
+	border-bottom: 1px solid #949A9C;
+	border-top: 0px solid #000;
+	border-left: 0px solid #000;
+	color: #eee;
+}
+.box5-title {
+	padding: 3px;
+	margin: 0px;
+	border: none; 
+	border-bottom: 1px solid #949A9C;
+	border-top: 0px;
+	color: #eee;
+}
+.box-body {
+	background-color: #F7F7F7;
+	margin: 0px;
+	border: none; 
+	border-top: 0px solid #6B6D6B;
+	border-left: 1px solid #6B6D6B;
+	border-right: 1px solid #6B6D6B;
+	border-bottom: 0px solid #6B6D6B;
+	font-size: 0.8em;
+}
+.box1-body {
+	padding: 7px;
+	background-color: #fff;
+	border: 1px solid #949A9C;
+}
+.ImageButton
+{
+cursor: hand;
+}
+
+.darkbluetext
+{
+    COLOR: #000080;
+    FONT-FAMILY: arial,helvetica,verdana,sans-serif;
+    TEXT-DECORATION: none;
+}
+#darkbluetext
+{
+    COLOR: #000080;
+    FONT-FAMILY: arial,helvetica,verdana,sans-serif;
+    TEXT-DECORATION: none;
+}
+
+.CalHead {cursor:default; text-align:center; font:9pt arial; color:black; border-bottom:1px solid black;}
+.CalCell {cursor:hand; text-align:center;}
+.CellAnchor {text-decoration:none; font:9pt arial;}
+
+
+.WeekHead {}
+.WeekCol {}
+
+/* styles for the month navigators at the top */
+.MonthNav {vertical-align:middle;}
+
+/* styles for the 3 calendar portions (actually 3 table TDs) */
+.CalTop {text-align:center; background-color:#D4D0C8; border:1px solid gray; padding:1px 3px 1px 3px;}
+.CalMiddle {padding:2px 10px 0px 10px;}
+.CalBottom {text-align:center; padding:0px 10px 1px 10px;}
+
+/* styles for the title at the top */
+.CalTitle {vertical-align:middle; text-align:right; font:bold 9pt arial;}
+
+/* other classes */
+.Today {text-decoration:none; font:10pt arial; color:black;}
+A.Today:hover {color:orange}
+A.Today:active {color:red}
+
+.BottomDiv {border-top:1px solid black; padding:2px 0px 1px 0px; border-top-width:1px;}
+
+.btn {position:relative; left:-19px; top:1px;}
+
+.netscrap {text-align:left;}
+.lt {text-decoration:line-through;}
+.ltb {text-decoration:line-through; font-weight:bold;}
+.fb {font-weight:bold;}
+
+</STYLE>

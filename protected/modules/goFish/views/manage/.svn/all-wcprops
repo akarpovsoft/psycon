@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/psychic_com/!svn/ver/877/psychiccontact_com/trunk/protected/modules/goFish/views/manage
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psychic_com/!svn/ver/873/psychiccontact_com/trunk/protected/modules/goFish/views/manage/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/psychic_com/!svn/ver/877/psychiccontact_com/trunk/protected/modules/goFish/views/manage/view.php
+END
+viewAnswer.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/psychic_com/!svn/ver/877/psychiccontact_com/trunk/protected/modules/goFish/views/manage/viewAnswer.php
+END
+_formAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/psychic_com/!svn/ver/877/psychiccontact_com/trunk/protected/modules/goFish/views/manage/_formAdmin.php
+END
+answers.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/psychic_com/!svn/ver/862/psychiccontact_com/trunk/protected/modules/goFish/views/manage/answers.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psychic_com/!svn/ver/877/psychiccontact_com/trunk/protected/modules/goFish/views/manage/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/psychic_com/!svn/ver/872/psychiccontact_com/trunk/protected/modules/goFish/views/manage/update.php
+END
+models.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/psychic_com/!svn/ver/873/psychiccontact_com/trunk/protected/modules/goFish/views/manage/models.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/psychic_com/!svn/ver/872/psychiccontact_com/trunk/protected/modules/goFish/views/manage/create.php
+END
+createAnswer.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/psychic_com/!svn/ver/872/psychiccontact_com/trunk/protected/modules/goFish/views/manage/createAnswer.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psychic_com/!svn/ver/873/psychiccontact_com/trunk/protected/modules/goFish/views/manage/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psychic_com/!svn/ver/873/psychiccontact_com/trunk/protected/modules/goFish/views/manage/admin.php
+END

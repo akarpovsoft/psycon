@@ -1,0 +1,1 @@
+<?php echo Yii::t('lang', 'employment_main_text'); ?>

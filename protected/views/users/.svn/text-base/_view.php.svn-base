@@ -1,0 +1,166 @@
+<div class="view">
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_record_id')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->rr_record_id), array('view', 'id'=>$data->rr_record_id)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('operator_location')); ?>:</b>
+	<?php echo CHtml::encode($data->operator_location); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_account_id')); ?>:</b>
+	<?php echo CHtml::encode($data->rr_account_id); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_emailsent')); ?>:</b>
+	<?php echo CHtml::encode($data->rr_emailsent); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_synchronized')); ?>:</b>
+	<?php echo CHtml::encode($data->rr_synchronized); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_createdate')); ?>:</b>
+	<?php echo CHtml::encode($data->rr_createdate); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rr_lastaccess')); ?>:</b>
+	<?php echo CHtml::encode($data->rr_lastaccess); ?>
+	<br />
+
+	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
+	<?php echo CHtml::encode($data->name); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
+	<?php echo CHtml::encode($data->password); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password1')); ?>:</b>
+	<?php echo CHtml::encode($data->password1); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password_orig')); ?>:</b>
+	<?php echo CHtml::encode($data->password_orig); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('astrologers')); ?>:</b>
+	<?php echo CHtml::encode($data->astrologers); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('tarotreaders')); ?>:</b>
+	<?php echo CHtml::encode($data->tarotreaders); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('clairvoyants')); ?>:</b>
+	<?php echo CHtml::encode($data->clairvoyants); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('area')); ?>:</b>
+	<?php echo CHtml::encode($data->area); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('comments')); ?>:</b>
+	<?php echo CHtml::encode($data->comments); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('login')); ?>:</b>
+	<?php echo CHtml::encode($data->login); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('emailaddress')); ?>:</b>
+	<?php echo CHtml::encode($data->emailaddress); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('hear')); ?>:</b>
+	<?php echo CHtml::encode($data->hear); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('day')); ?>:</b>
+	<?php echo CHtml::encode($data->day); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('month')); ?>:</b>
+	<?php echo CHtml::encode($data->month); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('year')); ?>:</b>
+	<?php echo CHtml::encode($data->year); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('address')); ?>:</b>
+	<?php echo CHtml::encode($data->address); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
+	<?php echo CHtml::encode($data->phone); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('seniority')); ?>:</b>
+	<?php echo CHtml::encode($data->seniority); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
+	<?php echo CHtml::encode($data->type); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('frames')); ?>:</b>
+	<?php echo CHtml::encode($data->frames); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<?php echo CHtml::encode($data->status); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('laststatusupdate')); ?>:</b>
+	<?php echo CHtml::encode($data->laststatusupdate); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('balance')); ?>:</b>
+	<?php echo CHtml::encode($data->balance); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('requestid')); ?>:</b>
+	<?php echo CHtml::encode($data->requestid); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('banlist')); ?>:</b>
+	<?php echo CHtml::encode($data->banlist); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('gender')); ?>:</b>
+	<?php echo CHtml::encode($data->gender); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('affiliate')); ?>:</b>
+	<?php echo CHtml::encode($data->affiliate); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('first_reading')); ?>:</b>
+	<?php echo CHtml::encode($data->first_reading); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('user_type')); ?>:</b>
+	<?php echo CHtml::encode($data->user_type); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('free_mins')); ?>:</b>
+	<?php echo CHtml::encode($data->free_mins); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('reader_real_name')); ?>:</b>
+	<?php echo CHtml::encode($data->reader_real_name); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('lang')); ?>:</b>
+	<?php echo CHtml::encode($data->lang); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('chat_type')); ?>:</b>
+	<?php echo CHtml::encode($data->chat_type); ?>
+	<br />
+
+	*/ ?>
+
+</div>

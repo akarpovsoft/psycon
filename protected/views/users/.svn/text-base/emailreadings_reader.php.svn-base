@@ -1,0 +1,48 @@
+<?php
+$this->widget('zii.widgets.grid.CGridView', array(
+    'dataProvider'=>$data,
+    'columns' => array(
+        array(
+            'name' => Yii::t('lang', 'First_Name'),
+            'value' => '$data->first_name'
+        ),
+        array(
+            'name' => Yii::t('lang', 'State'),
+            'value' => '$data->u_contact_state_or_province'
+        ),
+        array(
+            'name' => Yii::t('lang', 'Country'),
+            'value' => '$data->v_contact_country'
+        ),
+        array(
+            'name' => Yii::t('lang', 'Sex'),
+            'value' => '$data->c_sex'
+        ),
+        array(
+            'name' => Yii::t('lang', 'DOB_Month'),
+            'value' => '$data->d_date_of_birth_Month1'
+        ),
+        array(
+            'name' => Yii::t('lang', 'DOB_Date'),
+            'value' => '$data->e_date_of_birth_Date2'
+        ),
+        array(
+            'name' => Yii::t('lang', 'DOB_Year'),
+            'value' => '$data->f_date_of_birth_YR3'
+        ),
+        array(
+            'name' => Yii::t('lang', 'Topic'),
+            'value' => '$data->l_topic'
+        ),
+        array(
+            'name' => Yii::t('lang', 'Date'),
+            'value' => '$data->date'
+        ),
+        array(
+            'class' => 'CLinkColumn',
+            'urlExpression' => '"view?id=".$data->qs_id',
+            'label' => 'View'
+        ),
+    ),
+));
+?>

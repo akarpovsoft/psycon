@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models
+END
+BlogComments.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models/BlogComments.php
+END
+SignupForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models/SignupForm.php
+END
+BlogSessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models/BlogSessions.php
+END
+LoginForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models/LoginForm.php
+END
+BlogUsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/psychic_com/!svn/ver/718/psychiccontact_com/trunk/protected/modules/blog/models/BlogUsers.php
+END

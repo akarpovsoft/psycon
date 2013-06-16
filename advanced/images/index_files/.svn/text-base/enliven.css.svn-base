@@ -1,0 +1,171 @@
+<STYLE>
+.Default
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.SmallTxt
+{
+    FONT-SIZE: 9px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BoldTxt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.Title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #cc4a2e;
+    FONT-FAMILY: Verdana, Arial
+}
+.TableHdr
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    BACKGROUND: #262676;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial
+}
+.TitleSmall
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #808080;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.LeadSrchTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #e7e3d6;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #262676
+}
+.PuttyTxt
+{
+    FONT-SIZE: 11px;
+    COLOR: #e7e3d6;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.LeadSelectedRow
+{
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #5151a7
+}
+.LeadRow1
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #dfdfdf
+}
+.LeadRow2
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #efefef
+}
+.LeadRowFresh
+{
+    FONT-SIZE: 10px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #309400;
+    a: link color: #FFFFFF
+}
+.LeadRowRed
+{
+    FONT-SIZE: 10px;
+    COLOR: #cccccc;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #b85b5b
+}
+.Error
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #cc0000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BigTitle
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 14px;
+    TEXT-TRANSFORM: capitalize;
+    FONT-STYLE: normal
+}
+.BoldTxtBlue
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12px;
+    COLOR: #000099;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BoldTxtBlueTITLE
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    COLOR: #000099;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BoldTxtTITLE
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BoldTxtBlueSmall
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: #000099;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.matts
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 12px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.BoldTxtBlueSmallCopy
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #003300;
+    LINE-HEIGHT: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-VARIANT: normal
+}
+.PuttyTxtBold
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #e7e3d6;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.FooterTxtLightBlue
+{
+    FONT-SIZE: 11px;
+    COLOR: #999999;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.BoldRed
+{
+    FONT: 12px Verdana, Arial, Helvetica, sans-serif;
+    COLOR: #cc3300;
+    TEXT-DECORATION: underline
+}
+.LightTable
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    BORDER-LEFT: black 1px solid;
+    BORDER-BOTTOM: black 1px solid
+}
+</STYLE>
